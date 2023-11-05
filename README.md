@@ -1,8 +1,11 @@
 # An isoform-resolution transcriptomic atlas of colorectal cancer from long-read single-cell sequencing
+
 This repository contains data analysis and demo code for the manuscript 
 
 [Li, Zhongxiao, et al. "An isoform-resolution transcriptomic atlas of colorectal cancer from long-read single-cell sequencing" bioRxiv, 2023](https://www.biorxiv.org/content/10.1101/2023.04.21.536771v3)
-
+<div align="center">
+  <img src="images/main.png" width="350" height="190">
+</div>
 Before formal publication, please use the following information for citation
 ```
 @article {Li2023.04.21.536771,
@@ -17,6 +20,7 @@ Before formal publication, please use the following information for citation
 	journal = {bioRxiv}
 }
 ```
+
 ## Prerequisites
 The data analysis code in this repo was developed with the following Python dependencies:
 - Python 3.8.13
