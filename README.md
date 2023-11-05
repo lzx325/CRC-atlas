@@ -1,8 +1,22 @@
 # An isoform-resolution transcriptomic atlas of colorectal cancer from long-read single-cell sequencing
 This repository contains data analysis and demo code for the manuscript 
 
-Li,Zhongxiao, et al. "An isoform-resolution transcriptomic atlas of colorectal cancer from long-read single-cell sequencing" \[[bioRxiv](https://www.biorxiv.org/content/10.1101/2023.04.21.536771v3)\]
+[Li, Zhongxiao, et al. "An isoform-resolution transcriptomic atlas of colorectal cancer from long-read single-cell sequencing" bioRxiv, 2023](https://www.biorxiv.org/content/10.1101/2023.04.21.536771v3)
 
+Before formal publication, please use the following information for citation
+```
+@article {Li2023.04.21.536771,
+	author = {Zhongxiao Li and Bin Zhang and Jia Jia Chan and Hossein Tabatabaeian and Qing Yun Tong and Xiao Hong Chew and Xiaonan Fan and Patrick Driguez and Charlene Chan and Faith Cheong and Shi Wang and Bei En Siew and Ian Jse-Wei Tan and Kai-Yin Lee and Bettina Lieske and Wai-Kit Cheong and Dennis Kappei and Ker-Kan Tan and Xin Gao and Yvonne Tay},
+	title = {An isoform-resolution transcriptomic atlas of colorectal cancer from long-read single-cell sequencing},
+	elocation-id = {2023.04.21.536771},
+	year = {2023},
+	doi = {10.1101/2023.04.21.536771},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2023/09/26/2023.04.21.536771},
+	eprint = {https://www.biorxiv.org/content/early/2023/09/26/2023.04.21.536771.full.pdf},
+	journal = {bioRxiv}
+}
+```
 ## Prerequisites
 The data analysis code in this repo was developed with the following Python dependencies:
 - Python 3.8.13
@@ -48,4 +62,4 @@ This part demonstrates the identified epithelial cell differentiation lineages. 
   <img src="images/neoantigen.png" width="275" height="300">
 </div>
 
-This part demonstrates how to obtain tumor-recurrent neoepitopes from a novel transcript and how to optimize a panel of neoepitopes with high binding affinities to patients' alleles. Relevant analyses are in `neoantigen_candidates.ipynb`.
+This part demonstrates how to obtain tumor-recurrent neoepitopes from novel transcripts and how to optimize a panel of neoepitopes with high binding affinity to patients' alleles. Relevant analyses are in `neoantigen_candidates.ipynb`.
