@@ -33,6 +33,7 @@ The data analysis code in this repo was developed with the following Python depe
 - seaborn 0.11.2
 - anndata 0.8.0
 - scanpy 1.9.1
+- jupyter-spaces 0.3.0
 
 The code was also developed with the following R dependencies:
 - R 4.0.5
