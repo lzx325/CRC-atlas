@@ -44,6 +44,7 @@ def select_kmer_greedy_iterative(kmer_binding_sets,identity_weights,n_kmers=None
 
     if kmers_by_transcripts is not None:
         transcripts_list=list(kmers_by_transcripts)
+
     for i in range(n_kmers):
         if kmers_by_transcripts is None:
             kmer,weight_gain=select_best_kmer(
@@ -62,6 +63,10 @@ def select_kmer_greedy_iterative(kmer_binding_sets,identity_weights,n_kmers=None
                 covered_sets,
                 identity_weights
             )
+
+            if kmer is None and len(candidate_kmers)>0:
+                kmer=candidate_kmers[0]
+                weight_gain=0
 
         if kmer is not None:
             if kmers_by_transcripts is not None:
@@ -85,6 +90,6 @@ def select_kmer_greedy_iterative(kmer_binding_sets,identity_weights,n_kmers=None
     
     if kmers_by_transcripts is not None:
         selected_kmers_by_isoform=[(k,v) for k,v in selected_kmers_by_isoform.items()]
-        return selected_kmers_by_isoform,covered_sets
+        return selected_kmers_by_isoform,final_covered_sets
     else:
-        return selected_kmers,covered_sets
+        return selected_kmers,final_covered_sets
